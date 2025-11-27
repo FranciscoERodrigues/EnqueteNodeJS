@@ -1,7 +1,7 @@
 # Ignorar dependências
 node_modules/
 
-# Arquivos de ambiente (chaves, senhas, configs privadas)
+# Arquivos de ambiente (senhas, tokens)
 .env
 .env.local
 .env.development
@@ -18,21 +18,15 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
-# Cache do Node
-.npm
-.cache
+# Cache e pastas geradas automaticamente
+.cache/
+npm-cache/
 dist/
 build/
 
-# Diretórios temporários
+# Arquivos temporários
 tmp/
 temp/
 
-# Arquivos do editor
+# Configurações do VS Code
 .vscode/
-.idea/
-
-# Arquivos de lock opcionais (caso não queira subir)
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
